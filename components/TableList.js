@@ -85,8 +85,8 @@ app.component('table-list', {
           Hourly Total
         </td>
 
-        <td>
-          {{ hourlyTotal }}
+        <td v-for="total in hourlyTotal">
+          {{ total }}
         </td>
 
         <td>
@@ -121,14 +121,20 @@ app.component('table-list', {
   },
   computed: {
     hourlyTotal() {
-      // function to compute totals per hour Array will go here
-      // for now return a string
-      return 'This will be an array'
+      let hourTotalArray = [];
+      for(let i = 0; i < this.storesArr[0].hourlySalesArr.length; i++) {
+        let hourTotal = 0;
+        for(let j=0; j < this.storesArr.length; j++) {
+          hourTotal += this.storesArr[j].hourlySalesArr[i];
+        }
+        hourTotalArray.push(hourTotal);
+      }
+      return hourTotalArray;
     },
     allTotals() {
-      // function to compute all totals will go here
-      // for now return a string
-      return 'This will be TOTAL'
+      return this.storesArr.reduce((acc,val) => {
+        return acc + val.locationTotal;
+      },0)
     },
   }
 });
