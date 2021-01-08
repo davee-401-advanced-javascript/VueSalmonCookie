@@ -12,15 +12,23 @@ app.component('table-list', {
   
     <thead>
       <tr> 
-        <th>
-          Salmon Cookie Sales
+        <th v-for="hour in hours">
+          {{hour}}
         </th>
       </tr>
     </thead>
 
     <tbody>
-      <tr>
-
+      <tr v-for="store in storesArr">
+        <td>
+          {{store.storeName}}
+        </td>
+        <td v-for="sales in store.hourlySalesArr">
+          {{sales}}
+        </td>
+        <td>
+          {{store.locationTotal}}
+        </td>
       </tr>
     </tbody>
 
@@ -32,7 +40,7 @@ app.component('table-list', {
   `,
   data() {
     return {
-      hours: [ '6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm',],
+      hours: [ 'Store Name','6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm', 'Total'],
       storesArr: []
     }
   },
