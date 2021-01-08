@@ -6,8 +6,6 @@ app.component('table-list', {
   
   <h2> This is list </h2>
 
-  
-
   <table>
   
     <thead>
@@ -33,9 +31,6 @@ app.component('table-list', {
     </tbody>
 
   </table>
-
-
-
 
   `,
   data() {

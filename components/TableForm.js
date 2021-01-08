@@ -37,8 +37,6 @@ app.component('table-form', {
         avgCookieSale: this.avgCookieSale 
       }
 
-
-
       this.$emit('create-store', store)
 
       this.storeName = ''
@@ -48,3 +46,4 @@ app.component('table-form', {
     }
   }
 })
+
