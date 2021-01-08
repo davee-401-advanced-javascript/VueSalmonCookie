@@ -79,6 +79,23 @@ app.component('table-list', {
       </tr>
     </tbody>
 
+    <tfoot>
+      <tr>
+        <td>
+          Hourly Total
+        </td>
+
+        <td>
+          {{ hourlyTotal }}
+        </td>
+
+        <td>
+          {{ allTotals }}
+        </td>
+
+      </tr>
+    </tfoot>
+
   </table>
 
   `,
@@ -102,6 +119,18 @@ app.component('table-list', {
       console.log('this.stores:', this.storesArr);
     },
   },
+  computed: {
+    hourlyTotal() {
+      // function to compute totals per hour Array will go here
+      // for now return a string
+      return 'This should be an array'
+    },
+    allTotals() {
+      // function to compute all totals will go here
+      // for now return a string
+      return 'All Totals Array'
+    },
+  }
 });
 
 
