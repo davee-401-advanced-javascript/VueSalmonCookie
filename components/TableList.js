@@ -4,7 +4,7 @@ app.component('table-list', {
   `
   <table-form @create-store="addToStore"></table-form>
   
-  <h2> This is list </h2>
+  <h2> Sales Table </h2>
 
   <table>
   
@@ -36,12 +36,12 @@ app.component('table-list', {
   data() {
     return {
       hours: [ 'Store Name','6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm', 'Total'],
-      storesArr: []
-    }
+      storesArr: [],
+    };
   },
   methods: {
     addToStore(store) {
-      let salesArray = []
+      let salesArray = [];
       for (var i = 0; i < 14; i++) {
         salesArray.push(Math.round(generateRandomNum(store.minCustomer, store.maxCustomer) * store.avgCookieSale));
       }
@@ -50,10 +50,10 @@ app.component('table-list', {
         return acc + val;
       }, 0);
       this.storesArr.push(store);
-      console.log('this.stores:', this.storesArr)
-    }
-  }
-})
+      console.log('this.stores:', this.storesArr);
+    },
+  },
+});
 
 
 function generateRandomNum(min, max) {

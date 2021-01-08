@@ -19,30 +19,6 @@ body {
   cursor: pointer;
 }
 
-.cart {
-  margin: 25px 100px;
-  float: right;
-  border: 1px solid #d8d8d8;
-  padding: 30px 30px;
-  background-color: white;
-  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
-}
-
-.color-circle {
-  width: 50px;
-  height: 50px;
-  margin-top: 8px;
-  border: 2px solid #d8d8d8;
-  border-radius: 50%;
-}
-
-.disabledButton {
-  background-color: #d8d8d8;
-  cursor: not-allowed;
-}
-
 h1 {
   font-size: 50px;
 }
@@ -76,38 +52,10 @@ li {
   font-size: 18px;
 }
 
-.nav-bar {
-  background: linear-gradient(-90deg, #84cf6a, #16c0b0);
-  height: 60px;
-  margin-bottom: 25px;
-  -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.57);
-}
-
-.out-of-stock-img {
-  opacity: 0.5;
-}
-
 p {
   font-size: 22px;
 }
 
-.product-display {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-}
-
-.product-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.product-image, .product-info {
-  width: 50%;
-}
 
 .review-form {
   display: flex;
@@ -122,32 +70,12 @@ p {
   box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
 }
 
-.review-container {
-  width: 425px;
-  padding: 20px;
-  background-color: white;
-  -webkit-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 2px 20px -12px rgba(0, 0, 0, 0.57);
-  box-shadow: 2px 20px -12px rgba(0, 0, 0, 0.57);
-  margin-left: 40px;
-  border: 2px solid #d8d8d8;
-}
-
-.review-container li {
-  margin-bottom: 30px;
-}
 
 .review-form .button {
   display: block;
   margin: 30px auto;
 }
 
-select {
-  height: 40px;
-  font-size: 20px;
-  background-color: white;
-  cursor: pointer;
-}
 
 textarea {
   width: 95%;
@@ -161,15 +89,3 @@ ul {
   list-style-type: none;
 }
 
-@media only screen and (max-width: 600px) {
-  .container {
-    flex-direction: column;
-  }
-  .product-image, .product-info {
-    margin-left: 10px;
-    width: 100%;
-  }
-  .review-form {
-    width: 90%;
-  }
-}
