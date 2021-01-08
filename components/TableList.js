@@ -123,12 +123,12 @@ app.component('table-list', {
     hourlyTotal() {
       // function to compute totals per hour Array will go here
       // for now return a string
-      return 'This should be an array'
+      return 'This will be an array'
     },
     allTotals() {
       // function to compute all totals will go here
       // for now return a string
-      return 'All Totals Array'
+      return 'This will be TOTAL'
     },
   }
 });
