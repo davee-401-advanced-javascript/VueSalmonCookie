@@ -7,9 +7,9 @@ Research Conducted By: Brendon Hampton, Chris Bortel, Davee Sok, Joe Pennock
 
 Overall Score and Comments
 
-### Score (Out of 10): 7 or 8
+## Score (Out of 10): 7 or 8
 
-## Describe the stack (front-end only? full stack?), database, efficiency, etc. Describe the general usability and learnability
+### Front-end stack. General usability and learnability
 - The Vue stack is front end. You can write directly into the html 
 - Does not need a server. React is like writing backend 
 - Tutorial video was super helpful and approachable and increased usability
